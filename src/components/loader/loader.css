@@ -1,0 +1,76 @@
+body{
+    margin:0;
+  }
+  
+  #background{
+    display:block;
+    position:fixed;
+    width:100%;
+    height:100%;
+    background-color: #0A192F;
+    background: -webkit-radial-gradient(center, ellipse cover, #0A192F 1%,#0d0011 100%);
+    background: -moz-radial-gradient(center, ellipse cover, #0A192F 1%,#0d0011 100%);
+    background: -ie-radial-gradient(center, ellipse cover, #0A192F 1%,#0d0011 100%);
+  }
+  
+  #logocontainer{
+    display:block;
+    position:fixed;
+    top:50%;
+    left:50%;
+    width:22vh;
+    height:24vh;
+    margin-left:-10vh;
+    margin-top:-10vh;
+    overflow:hidden;
+    transition:background-color 500ms;
+    cursor:pointer;
+  }
+  
+  #pelogo{
+    display: block;
+    position: absolute;
+    left: 2vh;
+    top: 2vh;
+    width: 20vh;
+    height: 20vh;
+    background: #34324b;
+    background: -moz-linear-gradient(-45deg, #34324b 0%, #161222 100%);
+    background: -webkit-linear-gradient(-45deg, #34324b 0%,#161222 100%);
+    background: linear-gradient(135deg, #34324b 0%,#161222 100%);
+    background-size: contain;
+    font-family: Trebuchet MS, sans-serif;
+    font-size: 12vh;
+    font-weight: 200;
+    color: #50CCB3;
+    text-align: center;
+    line-height: 20vh;
+  }
+  
+  .loader{
+    display:block;
+    position:absolute;
+    background-color:#50CCB3;
+  }
+  
+  /*Pretty complex animation, so each side needs its own @keyframes.*/
+  
+  @keyframes slide1{
+    50%{width:22vh; margin-left:0;}
+    100%{margin-left:22vh;}
+  }
+  
+  @keyframes slide2{
+    50%{height:22vh; margin-top:0;}
+    100%{margin-top:22vh;}
+  }
+  
+  @keyframes slide3{
+    50%{width:22vh; margin-right:0;}
+    100%{margin-right:22vh;}
+  }
+  
+  @keyframes slide4{
+    50%{height:22vh; margin-bottom:0}
+    100%{margin-bottom:22vh;}
+  }
