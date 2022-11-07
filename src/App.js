@@ -4,6 +4,8 @@ import Loader from './components/loader/Loader'
 import Nav from './components/nav/Nav'
 import About from './components/about/About'
 import Contact from './components/contact/Contact'
+import Project from './components/project/Project'
+
 
 function App() {
   const [loading, setLoading] = useState(false)
@@ -21,6 +23,7 @@ function App() {
         <body>
           <Nav/>
           <About/>
+          <Project/>
           <Contact/>
         </body> 
       }

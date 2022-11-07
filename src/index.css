@@ -28,7 +28,7 @@ html{
 
 body{
   background: var(--color-bg);
-  background-image: url(/public/images/bg-texture.png);
+  /* background-image: url(/public/images/bg-texture.png); */
   color: var(--color-primary);
   font-family: 'Poor Story', cursive;
 }
@@ -42,7 +42,4 @@ section{
 a{
   color: grey ;
   transition: var(transition);
-}
-a:hover{
-  color: var(--color-primary);
 }

@@ -1,17 +1,31 @@
 import React from 'react'
 import './nav.css'
-import {GrHomeRounded} from 'react-icons/gr'
+import {RiHome4Line} from 'react-icons/ri'
 import {FiUser} from 'react-icons/fi'
 import {FiBook} from 'react-icons/fi'
 import {TbMessageCircle} from 'react-icons/tb'
+import { useState } from 'react'
 
 const Nav = () => {
+  const [active, setActive] = useState("#")
   return (
     <nav>
-        <a href="#"><GrHomeRounded/></a>
-        <a href="#about"><FiUser/></a>
-        <a href="#project"><FiBook/></a>
-        <a href="#contact"><TbMessageCircle/></a>
+        <a href="#" className={active === '#' ? 'active': ''}><RiHome4Line/></a>
+        <a href="#about" 
+           onClick={() => setActive('#about')}
+           className={active === '#about' ? 'active' : ''}>
+          <FiUser/>
+        </a>
+        <a href="#project"
+          onClick={() => setActive('#project')}
+          className={active === '#project' ? 'active' : ''}>
+          <FiBook/>
+        </a>
+        <a href="#contact"
+          onClick={() => setActive('#contact')}
+          className={active === '#contact' ? 'active' : ''}>
+          <TbMessageCircle/>
+        </a>
     </nav>
   )
 }
