@@ -16,6 +16,8 @@
   --color-bg: #0A192F;
   --color-bg-variant: #112240;
   --color-primary: #50CCB3;
+
+  --conatiner-width: 75%;
 }
 
 html{
