@@ -14,10 +14,14 @@
 
 :root {
   --color-bg: #0A192F;
-  --color-bg-variant: #112240;
+  --color-bg-variant: #1b3158;
   --color-primary: #50CCB3;
+  --color-primary-var: #6abfae;
+  --color-secondary: #ccd6f6;
+  --color-text: #b5c3e7;
 
   --conatiner-width: 75%;
+  --transition: all 400ms ease;
 }
 
 html{
@@ -44,4 +48,25 @@ section{
 a{
   color: grey ;
   transition: var(transition);
+}
+
+img{
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+.btn{
+  width: max-content;
+  display: inline-block;
+  border: 2px solid var(--color-primary);
+  border-radius: 0.2rem;
+  color: var(--color-primary);
+  padding: 0.35rem 0.8rem;
+  font-size: 1.25rem;
+}
+
+.btn:hover{
+  background: rgba(106, 191, 174, 0.2)
+  ;
 }
