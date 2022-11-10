@@ -1,0 +1,16 @@
+.header-social{
+    display: flex;
+    flex-direction: column;
+    left: 5rem;
+    bottom: 0;
+    gap: 0.8rem;
+    position: absolute;
+    align-items: center;
+    position: fixed;
+}
+.header-social::after { 
+    content: '';
+    width: 1px;
+    height: 8rem;
+    background: var(--color-text);
+}
