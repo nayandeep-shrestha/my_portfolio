@@ -10,10 +10,9 @@ small{
     color: var(--color-text);
     font-size: 0.9rem;
 }
-
 .about-container{
     display: grid;
-    grid-template-columns:50% 35% ;
+    grid-template-columns: 35% 50% ;
     gap: 15%;
     width: var(--conatiner-width);
     margin-top: 5rem;

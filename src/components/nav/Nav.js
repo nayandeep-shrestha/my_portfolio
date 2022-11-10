@@ -10,6 +10,7 @@ const Nav = () => {
   const [active, setActive] = useState("#")
   return (
     <nav>
+
         <a href="#" className={active === '#' ? 'active': ''}><RiHome4Line/></a>
         <a href="#about" 
            onClick={() => setActive('#about')}
@@ -31,3 +32,4 @@ const Nav = () => {
 }
 
 export default Nav
+
