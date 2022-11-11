@@ -14,7 +14,7 @@ small{
     display: grid;
     grid-template-columns: 35% 50% ;
     gap: 15%;
-    width: var(--conatiner-width);
+    width: var(--container-width);
     margin-top: 5rem;
     margin-left: auto;
     margin-right: auto;

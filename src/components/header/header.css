@@ -12,11 +12,11 @@ header{
     overflow: hidden;
 }
 .header-container{
-    height:100%;
+    height:80%;
     display: grid;
     grid-template-columns:50% 35% ;
     gap: 15%;
-    width: var(--conatiner-width);
+    width: var(--container-width);
     margin-top: 12rem;
     margin-left: auto;
     margin-right: auto;   
