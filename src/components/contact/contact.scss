@@ -1,0 +1,144 @@
+.contact-container{
+    width: 60%;
+    margin-left: 20%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.1fr 1fr;
+    grid-template-areas: 
+        "card1 card2 card3"
+        "form form form";
+}
+.contact-card{
+    border: 1px solid transparent;
+    border-radius: 1rem;
+    padding: 1.5rem 1rem 0rem 1rem;
+    text-align: center;
+    transition: var(--transition);
+    margin: 1.2rem;
+}
+.contact-card:hover{
+    background: var(--color-bg-variant);
+}
+.card1{
+    grid-area: card1;
+}
+.card2{
+    grid-area: card2;
+}
+.card3{
+    grid-area: card3;
+}
+.contact-icon{
+    font-size: 1.75rem;
+}
+
+/*------------CONTACT FORM----------*/
+.contact-form {
+    width: 95%;
+    margin: 0 auto;
+    grid-area: form;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+        "name message"
+        "email message"
+        "subject message";
+        // "send send";
+}
+
+#name{
+    grid-area: name;
+}
+#email{
+    grid-area: email;
+}
+#subject{
+    grid-area: subject;
+}
+#message{
+    grid-area: message;
+}
+button.btn{
+    background: transparent;
+    margin:0 45%;
+    font-size: 1.5rem;
+    font-family:inherit;
+    
+}
+.form{
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    padding: 0 1rem;
+    margin-bottom: 2.5rem;
+}
+.form-control{
+    padding: 0.5rem 0.5rem;
+    color: var(--color-text);
+}
+.form .form-control{
+    border: none;
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+    background:transparent;
+    font-family:inherit;
+    font-size: 1.15rem;
+    line-height: inherit;   
+}
+.form-control:focus{
+    outline: none;
+}
+.form span {
+    position: absolute;
+    bottom: 0;
+    width: 0px;
+    height: 2.5px;
+    background-color: var(--color-primary-var);
+    transition: all 0.8s;
+}
+.form span {
+    left: 50%;
+    transform: translateX(-50%);
+}
+.form-control:focus + span {
+    width: 92%;
+}
+textarea{
+    height: 100%;
+    resize: vertical;
+}
+textarea:focus + span {
+    width: 92%;
+}
+label{
+    color: var(--color-secondary);
+} 
+
+.form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+    .label {
+        position: absolute;
+        -webkit-transition: all 1s ease;
+        -moz-transition: all 1s ease;
+        -ms-transition: all 1s ease;
+        -o-transition: all 1s ease;
+        transition: all 1s ease;
+        pointer-events: none;
+    }
+    .form-control {
+
+        &:focus ~ label,
+        &:valid ~ label {
+            margin-top: -25px;
+            -webkit-transition: all 1s ease;
+            -moz-transition: all 1s ease;
+            -ms-transition: all 1s ease;
+            -o-transition: all 1s ease;
+            transition: all 1s ease;
+        }
+    }
+}

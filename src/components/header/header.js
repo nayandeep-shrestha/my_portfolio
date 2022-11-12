@@ -5,7 +5,7 @@ import Socials from './Socials'
 
 const Header = () => {
   return (
-    <header>
+    <header id="header">
         <div className='header-container'>
           <div className='header-content'>
             <h3>Hi! I Am, </h3>
@@ -17,7 +17,7 @@ const Header = () => {
           </div>
           <div className='header-me'>
             <div className='header-me-img'>
-              <img src={ME} />
+              <img src={ME} alt="me" />
             </div>
         </div>
         <Socials/>

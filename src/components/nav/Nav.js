@@ -7,11 +7,14 @@ import {TbMessageCircle} from 'react-icons/tb'
 import { useState } from 'react'
 
 const Nav = () => {
-  const [active, setActive] = useState("#")
+  const [active, setActive] = useState("#header")
   return (
     <nav>
 
-        <a href="#" className={active === '#' ? 'active': ''}><RiHome4Line/></a>
+        <a href="#header" 
+           onClick={() => setActive('#header')}
+           className={active === '#header' ? 'active': ''}>
+          <RiHome4Line/></a>
         <a href="#about" 
            onClick={() => setActive('#about')}
            className={active === '#about' ? 'active' : ''}>

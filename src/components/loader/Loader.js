@@ -11,7 +11,7 @@ const Loader = () => {
   return (
     <body>
     <div id="background"></div>
-    <div id="logocontainer" onclick={fill}>
+    <div id="logocontainer" onClick={fill}>
       <div id="pelogo">NS</div>
       <div className="loader" 
            style={{right:0, top:'0vh', width:'0.7vh', height:0, animation:'slide2 1s linear forwards infinite', animationDelay: '0.5s'}}>

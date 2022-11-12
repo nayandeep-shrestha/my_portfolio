@@ -1,6 +1,5 @@
 import React from 'react'
 import './about.css'
-import ME from '../../assets/me.png'
 import CV from '../../assets/cv.pdf'
 import {TbAward} from 'react-icons/tb'
 import {MdOutlineLibraryBooks} from 'react-icons/md'
@@ -11,9 +10,7 @@ const About = () => {
       <h2 style={{textAlign: 'center'}}>About Me</h2>
       <div className='about-container'>        
         <div className='about-me'>
-          {/* <div className='about-me-img'>
-            <img src={ME} />
-          </div> */}
+          
         </div>       
 
       <div className='about-content'>

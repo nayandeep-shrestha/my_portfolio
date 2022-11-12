@@ -1,10 +1,24 @@
-import React from 'react'
+import React, { useRef } from 'react';
 import {MdOutlineEmail} from "react-icons/md"
 import {BsWhatsapp} from "react-icons/bs"
 import {RiMessengerLine} from "react-icons/ri"
-import './contact.css'
+import './contact.scss'
+import emailjs from 'emailjs-com';
 
 const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_iwy8g6f', 'template_bq98dlb', form.current, '_YnmibzVGZqqefdou')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+    e.target.reset()
+  };
   return (
     <section id="contact">
       <h2 style={{textAlign: 'center'}}>Get In Touch!</h2>
@@ -27,40 +41,39 @@ const Contact = () => {
            <p>Nayandeep Shrestha</p>
           </div>
         </a>
-        <form className='contact-form'>
+        <form ref={form} onSubmit={sendEmail} className='contact-form'>
           <div id="name" className='form'>
-            <label id="name-label" for="name">Name</label>
-              <input type="text" 
-                     name="name"
-                     class="form-control"
-                     placeholder="Your Name"
-                     required/>
+            <input type="text" 
+                   name="name"
+                   className="form-control"
+                   required/>
+            <span></span>
+            <label id="name-label" htmlFor="name" className='label'>Name</label>
           </div> 
-          <div id="subject" className='form'>
-            <label id="subject-label" for="subject">Subject</label>
-              <input type="text" 
-                     name="subject"
-                     class="form-control"
-                     placeholder=""
-                     required/>
+          <div id="email" className='form'>
+            <input type="text" 
+                   name="email"
+                   className="form-control"
+                   required/>
+            <span></span>
+            <label id="email-label" htmlFor="email" className='label'>Email</label>
           </div>
-          <div id="phone" className='form'>
-            <label id="phone-label" for="phone">Phone</label>
-              <input type="text" 
-                     name="phone"
-                     class="form-control"
-                     placeholder="Your phone no."/>
+          <div id="subject" className='form'>
+            <input type="text" 
+                   name="subject"
+                   className="form-control"
+                   required/>
+            <span></span>
+            <label id="subject-label" htmlFor="subject" className='label'>Subject</label>
           </div>
           <div id="message" className='form'>
-            <label id="message-label" for="message">Message</label>
-              <textarea class="textarea"
-                        name="message"
-                        placeholder="Type here your message......."></textarea>
+            <textarea name="message"
+                      className="form-control"
+                      required/>
+            <span></span>
+            <label id="message-label" htmlFor="message" className='label'>Message</label>
           </div>
-          <div id='service' className='form'>
-            <label>Services</label>
-          </div>
-          <button type="submit" id="send" className='btn'>Send Message</button>
+        <button type="submit" className='btn'>Send Message</button>
         </form>
       </div>
     </section>

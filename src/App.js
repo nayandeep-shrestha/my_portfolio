@@ -1,14 +1,14 @@
-// import './App.css';
 import { useState, useEffect } from 'react';
 import Loader from './components/loader/Loader'
 import Nav from './components/nav/Nav'
 import About from './components/about/About'
 import Contact from './components/contact/Contact'
-import Project from './components/project/Project'
+import Portfolio from './components/portfolio/Portfolio'
 import Header from './components/header/Header'
+import Skills from './components/skills/Skills'
+import Qualification from './components/qualification/Qualification'
 
-
-function App() {
+const App = () => {
   const [loading, setLoading] = useState(false)
   useEffect(() => {
     setLoading(true)
@@ -25,7 +25,9 @@ function App() {
           <Header/>
           <Nav/>
           <About/>
-          <Project/>
+          <Skills/>
+          <Qualification/>
+          <Portfolio/>
           <Contact/>
         </body> 
       }
