@@ -3,6 +3,7 @@ import './nav.css'
 import {RiHome4Line} from 'react-icons/ri'
 import {FiUser} from 'react-icons/fi'
 import {FiBook} from 'react-icons/fi'
+import {FaAward} from 'react-icons/fa'
 import {TbMessageCircle} from 'react-icons/tb'
 import { useState } from 'react'
 
@@ -20,10 +21,20 @@ const Nav = () => {
            className={active === '#about' ? 'active' : ''}>
           <FiUser/>
         </a>
-        <a href="#project"
-          onClick={() => setActive('#project')}
-          className={active === '#project' ? 'active' : ''}>
+        <a href="#skills"
+          onClick={() => setActive('#skills')}
+          className={active === '#skills' ? 'active' : ''}>
           <FiBook/>
+        </a>
+        {/* <a href="#qualification"
+          onClick={() => setActive('#qualification')}
+          className={active === '#qualification' ? 'active' : ''}>
+          <FaAward/>
+        </a> */}
+        <a href="#portfolio"
+          onClick={() => setActive('#portfolio')}
+          className={active === '#portfolio' ? 'active' : ''}>
+          <FaAward/>
         </a>
         <a href="#contact"
           onClick={() => setActive('#contact')}

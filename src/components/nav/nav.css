@@ -3,10 +3,10 @@ nav {
     width: max-content;
     display: block;
     border-radius: 50px;
-    padding: 1rem 0.8rem;
+    padding: 1.2rem 0.8rem;
     position: fixed;
     right: 0%;
-    bottom: 30%;
+    bottom: 22%;
     display: flex;
     flex-direction: column;
     gap: 0.8rem;
@@ -21,7 +21,7 @@ nav a{
     display: flex;
     border-radius: 50%;
     color: grey;
-    font-size: 1.35rem;
+    font-size: 1.2rem;
 }
 nav a:hover{
     background: rgba(0,0,0,0.35);

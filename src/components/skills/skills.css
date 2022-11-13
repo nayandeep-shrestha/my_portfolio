@@ -1,0 +1,110 @@
+#skills{
+    padding: 2rem 0 4rem;
+}
+.skills-head{
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.skills-head>span{
+    color: var(--color-secondary);
+    font-size: 1rem;
+}
+.skills-container{
+    row-gap: 0;
+    width: var(--container-width-sh);
+    margin-left: auto;
+    margin-right: auto;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1.5rem;
+}
+.skills-header{
+    display: flex;
+    align-items: cener;
+    margin-bottom: 2.5rem;
+    cursor: pointer;
+}
+.skills-icon,
+.skills-arrow{
+    color: var(--color-primary-var);
+}
+.skills-icon{
+    font-size: 1.8rem;
+    margin-right: 0.75rem;
+}
+.skills-title{
+    color: var(--color-text);
+}
+.skills-subtitle{
+    color: var(--color-secondary);
+}
+.skills-arrow{
+    font-size: 1.2rem;
+    margin-left: auto;
+    transition: 0.4s;
+}
+.skills-list{
+    row-gap: 1.5rem;
+    padding-left: 2.7rem;
+}
+.skills-titles{
+    color: var(--color-secondary);
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+.skills-name{
+    font-size: 1.1rem;
+}
+.skills-bar,
+.skills-percent{
+    height: 4px ;
+    border-radius: 0.25rem;
+}
+.skills-bar{
+    background-color: rgb(112, 111, 111);
+}
+.skills-percent{
+    display: block;
+    background-color: var(--color-primary-var);
+}
+.skills-html{
+    width: 90%;
+}
+.skills-css,
+.skills-js,
+.skills-react{
+    width: 60%;
+}
+.skills-node{
+    width: 65%;
+}
+.skills-express{
+    width: 55%;
+}
+.skills-photo{
+    width: 70%;
+}
+.skills-figma{
+    width: 45%;
+}
+.skills-canva{
+    width: 70%;
+}
+.skills-wordpress{
+    width: 80%;
+}
+.skills-close .skills-list{
+    height: 0;
+    overflow: hidden;
+}
+.skills-open .skills-list{
+    height: max-content;
+    margin-bottom: 2.5rem;
+}
+.skills-open .skills-arrow{
+    transform: rotate(180deg);
+}

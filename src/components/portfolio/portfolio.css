@@ -1,0 +1,22 @@
+.portfolio-head{
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.portfolio-head>span{
+    color: var(--color-secondary);
+    font-size: 1rem;
+}
+.portfolio-container{
+    overflow: initial;
+}
+/* .portfolio-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+} */
+
+.portfolio-img{
+    width: 300px;
+    justify-self: center;
+    border-radius: 1rem;
+}

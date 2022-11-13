@@ -26,7 +26,7 @@ const App = () => {
           <Nav/>
           <About/>
           <Skills/>
-          <Qualification/>
+          {/* <Qualification/> */}
           <Portfolio/>
           <Contact/>
         </body> 

@@ -17,10 +17,11 @@
   --color-bg-variant: #1b3158;
   --color-primary: #50CCB3;
   --color-primary-var: #6abfae;
-  --color-secondary: #ccd6f6;
+  --color-secondary: #b6beda;
   --color-text: #b5c3e7;
 
   --container-width: 75%;
+  --container-width-sh: 60%;
   --transition: all 400ms ease;
 }
 
@@ -56,9 +57,12 @@ a:hover{
 img{
   display: block;
   width: 100%;
+  height: auto;
   object-fit: cover;
 }
-
+h2{
+  font-size: 2.5rem;
+}
 .btn{
   width: max-content;
   display: inline-block;
