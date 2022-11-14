@@ -1,17 +1,13 @@
-import React,{useState,useEffect} from 'react'
+import React,{useState} from 'react'
 import './skills.css'
 import Frontend from './Frontend'
 import Backend from './Backend'
-// import UI_UX from './UI_UX'
-// import Other from './Other'
+import UI_UX from './UI_UX'
+import Other from './Other'
 
 
 const Skills = () => {
   const [list, setList] = useState(false);
-  const toggle= () => {
-    setList(prev => !prev)
-  }
-    
 
   return (
     <section id="skills">
@@ -19,11 +15,15 @@ const Skills = () => {
           <h2>Skills</h2>
           <span>My techinal level</span>
         </div>
-        <div className="skills-container grid">
-            <Frontend list={list} toggle={toggle} />
-            <Backend list={list} toggle={toggle}/>
-            {/* <UI_UX />
-            <Other />           */}
+        <div className="skills-container container grid">
+            <div>
+              <Frontend list={list} setList={setList} />
+              <Backend list={list} setList={setList} />
+            </div>
+            <div>
+              <UI_UX list={list} setList={setList} />
+              <Other list={list} setList={setList} />   
+            </div>       
         </div>
     </section>
   )

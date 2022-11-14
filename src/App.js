@@ -6,7 +6,6 @@ import Contact from './components/contact/Contact'
 import Portfolio from './components/portfolio/Portfolio'
 import Header from './components/header/Header'
 import Skills from './components/skills/Skills'
-import Qualification from './components/qualification/Qualification'
 
 const App = () => {
   const [loading, setLoading] = useState(false)
@@ -26,7 +25,6 @@ const App = () => {
           <Nav/>
           <About/>
           <Skills/>
-          {/* <Qualification/> */}
           <Portfolio/>
           <Contact/>
         </body> 
