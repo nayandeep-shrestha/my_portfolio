@@ -17,7 +17,7 @@ const App = () => {
   }, [])
 
   return (
-    <div>
+    <>
       {loading? 
         <Loader/> :
         <body>
@@ -29,7 +29,7 @@ const App = () => {
           <Contact/>
         </body> 
       }
-    </div>
+    </>
   );
 }
 
