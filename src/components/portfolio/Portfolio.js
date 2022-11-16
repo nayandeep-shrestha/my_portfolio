@@ -18,65 +18,64 @@ const Portfolio= () => {
         <h2>Portfolio</h2>
       </div>
       <div className="portfolio-container">
-      <Swiper
-        cssMode={true}
-        loop={true}
-        navigation={{
-          clickable:true,
-          nextEl:'.swiper-button-next',
-          prevEl:'.swiper-button-prev',
-        }}
-        pagination={{
-          clickable: true,
-          e1:'.swiper-pagination'
-        }}
-        keyboard={true}
-        modules={[Navigation, Pagination, Keyboard]}
-        className="mySwiper"
-      >
+        <Swiper
+          cssMode={true}
+          navigation={{
+            clickable:true,
+            nextEl:'.swiper-button-next',
+            prevEl:'.swiper-button-prev',
+          }}
+          pagination={{
+            clickable: true,
+            e1:'.swiper-pagination'
+          }}
+          keyboard={true}
+          modules={[Navigation, Pagination, Keyboard]}
+          className="mySwiper"
+        >
           <SwiperSlide>
-         <div className="portfolio-content grid">
-            <img src={Project1} alt='' className='portfolio-img' />
-            <div className="portfolio-data">
-              <h3 className="portfolio-title">Wordpress website</h3>
-              <p className="portfolio-desc"></p>
-              <a href="https://pasadesigns.com/" target='_blank' className="btn btn-flex">
-                Demo
-                <BsArrowRightShort className='btn-icon'/>
-              </a>
+            <div className="portfolio-content grid">
+              <img src={Project1} alt='' className='portfolio-img' />
+              <div className="portfolio-data">
+                  <h3 className="portfolio-title">Wordpress website</h3>
+                <p className="portfolio-desc"></p>
+                <a href="https://pasadesigns.com/" target='_blank' className="btn btn-flex">
+                  Demo
+                  <BsArrowRightShort className='btn-icon'/>
+                </a>
+              </div>
             </div>
-          </div>
-          </SwiperSlide>
-      <SwiperSlide>
-         <div className="portfolio-content grid">
-            <img src={Project1} alt='' className='portfolio-img' />
-            <div className="portfolio-data">
-              <h3 className="portfolio-title">Wordpress website</h3>
-              <p className="portfolio-desc">A website made with wordpress for an Architect Company</p>
-              <a href="https://pasadesigns.com/" className="btn btn-flex">
-                Demo
-                <BsArrowRightShort className='btn-icon'/>
-              </a>
-            </div>
-          </div>
           </SwiperSlide>
           <SwiperSlide>
-         <div className="portfolio-content grid">
-            <img src={Project1} alt='' className='portfolio-img' />
-            <div className="portfolio-data">
-              <h3 className="portfolio-title">Wordpress website</h3>
-              <p className="portfolio-desc"></p>
-              <a href="#" className="btn btn-flex">
-                Demo
-                <BsArrowRightShort className='btn-icon'/>
-              </a>
+            <div className="portfolio-content grid">
+              <img src={Project1} alt='' className='portfolio-img' />
+              <div className="portfolio-data">
+                <h3 className="portfolio-title">Wordpress website</h3>
+                <p className="portfolio-desc"></p>
+                <a href="https://pasadesigns.com/" className="btn btn-flex">
+                  Demo
+                  <BsArrowRightShort className='btn-icon'/>
+                </a>
+              </div>
             </div>
-          </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="portfolio-content grid">
+              <img src={Project1} alt='' className='portfolio-img' />
+              <div className="portfolio-data">
+                <h3 className="portfolio-title">Wordpress website</h3>
+                <p className="portfolio-desc"></p>
+                <a href="#" className="btn btn-flex">
+                  Demo
+                  <BsArrowRightShort className='btn-icon'/>
+                </a>
+              </div>
+            </div>
           </SwiperSlide>
           <div className='swiper-button-next'><TfiAngleRight className='swiper-portfolio-icon'/></div>
           <div className='swiper-button-prev'><TfiAngleLeft className='swiper-portfolio-icon'/></div>
-          <div className='swiper-pagination'></div>
         </Swiper>
+        <div className='swiper-pagination'></div>
       </div>
     </section>
   )

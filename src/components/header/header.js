@@ -8,7 +8,7 @@ const Header = () => {
     <header id="header">
         <div className='header-container'>
           <div className='header-content'>
-            <h3>Hi! I Am, </h3>
+            <h3>Hello, my name is </h3>
             <h1>Nayandeep Shrestha</h1>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, eius tempore? Alias vero fugiat illo? Officiis impedit ratione ad laborum minima perferendis!
@@ -19,9 +19,9 @@ const Header = () => {
             <div className='header-me-img'>
               <img src={ME} alt="me" />
             </div>
-        </div>
-        <Socials/>
+          </div>
       </div>
+        <Socials/>
     </header>
   )
 }

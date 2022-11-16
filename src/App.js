@@ -6,6 +6,7 @@ import Contact from './components/contact/Contact'
 import Portfolio from './components/portfolio/Portfolio'
 import Header from './components/header/Header'
 import Skills from './components/skills/Skills'
+import Footer from './components/footer/Footer';
 
 const App = () => {
   const [loading, setLoading] = useState(false)
@@ -13,7 +14,7 @@ const App = () => {
     setLoading(true)
     setTimeout(() => {
       setLoading(false)
-    },2000)
+    },500)
   }, [])
 
   return (
@@ -21,12 +22,14 @@ const App = () => {
       {loading? 
         <Loader/> :
         <body>
+          {/* <Navbar/> */}
           <Header/>
           <Nav/>
           <About/>
           <Skills/>
           <Portfolio/>
           <Contact/>
+          <Footer/>
         </body> 
       }
     </>

@@ -1,5 +1,6 @@
 #skills{
-    padding-top: 2rem 0 4rem;
+    padding: 2rem 0 4rem;
+
 }
 .skills-head{
     text-align: center;
@@ -11,13 +12,14 @@
 }
 .skills-container{
     row-gap: 0;
-    max-width:768px;
+    max-width: var(--container-width-sh);
+    margin-top: 3rem;
     margin-left: 1.5rem;
     margin-right: 1.5rem;
 }
 .grid{
     display: grid;
-    gap: 1.5rem;
+    gap: 2rem;
   }
 .skills-header{
     display: flex;
@@ -47,8 +49,9 @@
     transition: 0.6s;
 }
 .skills-list{
-    row-gap: 1.5rem;
+    row-gap: 1rem;
     padding-left: 2.7rem;
+    padding-right: 1rem;
 }
 .skills-titles{
     color: var(--color-secondary);
@@ -109,25 +112,24 @@
     transform: rotate(180deg);
 }
 
-@media screen and (max-width: 350px){
+@media screen and (max-width: 386px){
     .skills-container{
-      margin-left: 1rem;
-      margin-right: 1rem;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 80%;
     }
   }
-  @media screen and (min-width: 568px){
+@media screen and (min-width: 568px){
     .skills-container{
       grid-template-columns: repeat(2,1fr);
     }
+   
   }
   
-  @media screen and (min-width: 768px){
+@media screen and (min-width: 768px){
     .skills-container{
       margin-left: auto;
       margin-right: auto;
-    }
-    #skills{
-      padding: 6rem 0 2rem;
     }
   }
   

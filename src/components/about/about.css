@@ -83,6 +83,9 @@ small{
 
 /* ================ MEDIA (Small) ============ */
 @media screen and (max-width: 600px) {
+    /* #about{
+        margin-bottom: rem;
+    } */
     .about-container{
         grid-template-columns: 1fr;
         gap: 0;

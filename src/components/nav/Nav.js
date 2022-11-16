@@ -11,7 +11,6 @@ const Nav = () => {
   const [active, setActive] = useState("#header")
   return (
     <nav>
-
         <a href="#header" 
            onClick={() => setActive('#header')}
            className={active === '#header' ? 'active': ''}>
@@ -26,11 +25,6 @@ const Nav = () => {
           className={active === '#skills' ? 'active' : ''}>
           <FiBook/>
         </a>
-        {/* <a href="#qualification"
-          onClick={() => setActive('#qualification')}
-          className={active === '#qualification' ? 'active' : ''}>
-          <FaAward/>
-        </a> */}
         <a href="#portfolio"
           onClick={() => setActive('#portfolio')}
           className={active === '#portfolio' ? 'active' : ''}>

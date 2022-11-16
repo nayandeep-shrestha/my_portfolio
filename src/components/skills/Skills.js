@@ -7,7 +7,7 @@ import Other from './Other'
 
 
 const Skills = () => {
-  const [list, setList] = useState(false);
+  const [list, setList] = useState('frontend');
 
   return (
     <section id="skills">

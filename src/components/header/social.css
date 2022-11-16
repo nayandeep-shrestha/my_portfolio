@@ -1,7 +1,7 @@
 .header-social{
     display: flex;
     flex-direction: column;
-    left: 5rem;
+    left: 3rem;
     bottom: 0;
     gap: 0.8rem;
     position: absolute;
@@ -13,4 +13,9 @@
     width: 1px;
     height: 8rem;
     background: var(--color-text);
+}
+@media screen and (max-width: 600px) {
+    .header-social{
+        display: none;
+    }
 }

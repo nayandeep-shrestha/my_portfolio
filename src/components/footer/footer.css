@@ -1,0 +1,24 @@
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+    min-height: 70px;
+    padding: 15px;
+    text-align: center;
+    margin-top: -5rem;
+}
+.footer-social{
+    display:block;
+    width: 100%;
+    max-width: 270px;
+    margin: 0px auto 10px;
+    color: var(--color-secondary)
+}
+.footer-content{
+    color: #a8b2d1;
+    font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+    font-size: 1rem;
+    line-height: 1;
+}
