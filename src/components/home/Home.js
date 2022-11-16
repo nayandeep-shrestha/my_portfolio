@@ -1,5 +1,5 @@
 import React from 'react'
-import './header.css'
+import './home.css'
 import ME from '../../assets/me.png'
 import Socials from './Socials'
 
