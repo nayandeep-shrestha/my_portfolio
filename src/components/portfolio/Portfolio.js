@@ -39,7 +39,7 @@ const Portfolio= () => {
               <div className="portfolio-data">
                   <h3 className="portfolio-title">Wordpress website</h3>
                 <p className="portfolio-desc"></p>
-                <a href="https://pasadesigns.com/" target='_blank' className="btn btn-flex">
+                <a href="https://pasadesigns.com/" target='_blank' rel="noreferrer" className="btn btn-flex">
                   Demo
                   <BsArrowRightShort className='btn-icon'/>
                 </a>
@@ -52,7 +52,7 @@ const Portfolio= () => {
               <div className="portfolio-data">
                 <h3 className="portfolio-title">Wordpress website</h3>
                 <p className="portfolio-desc"></p>
-                <a href="https://pasadesigns.com/" className="btn btn-flex">
+                <a href="https://pasadesigns.com/" target='_blank' rel="noreferrer" className="btn btn-flex">
                   Demo
                   <BsArrowRightShort className='btn-icon'/>
                 </a>
@@ -65,7 +65,7 @@ const Portfolio= () => {
               <div className="portfolio-data">
                 <h3 className="portfolio-title">Wordpress website</h3>
                 <p className="portfolio-desc"></p>
-                <a href="#" className="btn btn-flex">
+                <a href="https://pasadesigns.com/" target='_blank' rel="noreferrer" className="btn btn-flex">
                   Demo
                   <BsArrowRightShort className='btn-icon'/>
                 </a>
