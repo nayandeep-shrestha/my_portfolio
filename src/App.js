@@ -18,21 +18,20 @@ const App = () => {
   }, [])
 
   return (
-    <>
+    <div>
       {loading? 
         <Loader/> :
-        <body>
-          {/* <Navbar/> */}
-          <Home/>
+        <>
           <Nav/>
+          <Home/>
           <About/>
           <Skills/>
           <Portfolio/>
-          <Contact/>
+          {/* <Contact/> */}
           <Footer/>
-        </body> 
+        </>
       }
-    </>
+    </div>
   );
 }
 

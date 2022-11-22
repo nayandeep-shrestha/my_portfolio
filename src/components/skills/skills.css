@@ -1,6 +1,6 @@
 #skills{
-    padding: 2rem 0 4rem;
-
+    padding-top: 4rem;
+    margin-top: 0rem;
 }
 .skills-head{
     text-align: center;
@@ -13,9 +13,9 @@
 .skills-container{
     row-gap: 0;
     max-width: var(--container-width-sh);
-    margin-top: 3rem;
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
+    margin-top: 5rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 .grid{
     display: grid;

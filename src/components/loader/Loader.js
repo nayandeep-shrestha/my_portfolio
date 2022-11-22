@@ -9,7 +9,7 @@ const Loader = () => {
         document.getElementById("logocontainer").style.backgroundColor=full?"#3ebffa":"transparent";
     }
   return (
-    <body>
+    <>
     <div id="background"></div>
     <div id="logocontainer" onClick={fill}>
       <div id="pelogo">NS</div>
@@ -26,7 +26,7 @@ const Loader = () => {
            style={{left:0, bottom:'0vh', width:'0.7vh', height:0, animation:'slide4 1s linear forwards infinite', animationDelay:'0.5s'}}>
       </div>
     </div>
-  </body>
+  </>
   )
 }
 

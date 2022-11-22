@@ -32,17 +32,17 @@ nav a.active{
     color: var(--color-primary);
 }
 
-/* ================ MEDIA (Medium) ============ */
+
 @media screen and (max-width: 1024px) {
     
 }
 
-/* ================ MEDIA (Small) ============ */
+
 @media screen and (max-width: 600px) {
     nav {
         padding: 0.4rem 1.2rem;
         left: 50%;
-        bottom: 5%;
+        bottom: 5.5%;
         display: flex;
         flex-direction: row;
         gap: 0.8rem;

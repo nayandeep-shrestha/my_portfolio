@@ -3,7 +3,7 @@ import './home.css'
 import ME from '../../assets/me.png'
 import Socials from './Socials'
 
-const Header = () => {
+const Home = () => {
   return (
     <header id="header">
         <div className='header-container'>
@@ -26,4 +26,4 @@ const Header = () => {
   )
 }
 
-export default Header
+export default Home

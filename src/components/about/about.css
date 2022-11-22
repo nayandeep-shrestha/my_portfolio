@@ -1,5 +1,6 @@
 #about{
-    padding-top: 2rem;
+    padding-top: 4rem;
+    margin-top: 0rem;
 }
 h4{
     color: var(--color-secondary);
@@ -66,7 +67,7 @@ small{
     margin-bottom: 0.5rem;
 }
 
-/* ================ MEDIA (Medium) ============ */
+
 @media screen and (max-width: 1024px) {
     .about-container{
         grid-template-columns: 1fr;
@@ -81,11 +82,9 @@ small{
     }
 }
 
-/* ================ MEDIA (Small) ============ */
+
 @media screen and (max-width: 600px) {
-    /* #about{
-        margin-bottom: rem;
-    } */
+
     .about-container{
         grid-template-columns: 1fr;
         gap: 0;

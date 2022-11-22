@@ -16,7 +16,7 @@ header{
     display: flex;
     flex-direction: row;
     width: var(--container-width);
-    margin: 10rem auto;
+    margin: 10rem auto 0rem;
 }
 .header-content{
     margin-top: auto;
@@ -44,7 +44,7 @@ header{
         flex-direction: column-reverse;
     }
     .header-me{
-        margin: -3rem auto 2rem auto;
+        margin: 0rem auto 5rem auto;
     }
     .header-me-img{
         width:200px;
