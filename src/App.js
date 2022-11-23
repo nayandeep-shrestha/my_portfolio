@@ -22,8 +22,8 @@ const App = () => {
       {loading? 
         <Loader/> :
         <>
-          <Nav/>
           <Home/>
+          <Nav/>
           <About/>
           <Skills/>
           <Portfolio/>

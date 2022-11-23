@@ -5,7 +5,7 @@ import Socials from './Socials'
 
 const Home = () => {
   return (
-    <header id="header">
+    <section id="header">
         <div className='header-container'>
           <div className='header-content'>
             <h3>Hello, my name is </h3>
@@ -22,7 +22,7 @@ const Home = () => {
           </div>
       </div>
         <Socials/>
-    </header>
+    </section>
   )
 }
 
