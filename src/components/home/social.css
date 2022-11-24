@@ -1,7 +1,7 @@
 .header-social{
     display: flex;
     flex-direction: column;
-    left: 3rem;
+    left: 4rem;
     bottom: 0;
     gap: 0.8rem;
     position: absolute;
@@ -13,6 +13,9 @@
     width: 1px;
     height: 8rem;
     background: var(--color-text);
+}
+.social-icon{
+    font-size: 1.2rem;
 }
 @media screen and (max-width: 600px) {
     .header-social{
