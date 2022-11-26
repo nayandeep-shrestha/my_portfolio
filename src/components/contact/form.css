@@ -125,7 +125,8 @@ label {
     padding:1rem;
     width: 40%;
     height: max-content;
-    animation: fadeInAnimation ease 0.3s
+    animation: fadeInAnimation ease 0.3s;
+    
 }
 @keyframes fadeInAnimation {
     0% {
@@ -142,6 +143,7 @@ label {
     right: 0;
     bottom: 0;
     background: rgba(120, 120, 120, 0.5);
+    z-index:100;
 }
 
 @media screen and (max-width:600px) {
