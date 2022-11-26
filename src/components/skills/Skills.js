@@ -15,7 +15,7 @@ const Skills = () => {
           <h2>Skills</h2>
           <span>My techinal level</span>
         </div>
-        <div className="skills-container container grid">
+        <div className="skills-container grid">
             <div>
               <Frontend list={list} setList={setList} />
               <Backend list={list} setList={setList} />

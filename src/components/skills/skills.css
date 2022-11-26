@@ -19,11 +19,10 @@
 }
 .grid{
     display: grid;
-    gap: 2rem;
   }
 .skills-header{
     display: flex;
-    align-items: cener;
+    align-items: center;
     margin-bottom: 2.5rem;
     cursor: pointer;
 }
