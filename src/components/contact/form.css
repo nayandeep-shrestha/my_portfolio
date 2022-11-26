@@ -125,7 +125,7 @@ label {
     padding:1rem;
     width: 40%;
     height: max-content;
-    animation: fadeInAnimation ease 0.5s
+    animation: fadeInAnimation ease 0.3s
 }
 @keyframes fadeInAnimation {
     0% {
