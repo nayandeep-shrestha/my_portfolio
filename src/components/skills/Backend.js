@@ -29,7 +29,7 @@ const Backend = (props) => {
         <div className="skills-data">
           <div className="skills-titles">
             <h3 className="skills-name">Express</h3>
-            <span className="skills-number">55%</span>
+            <span className="skills-number">60%</span>
           </div>
           <div className="skills-bar">
             <span className="skills-percent skills-express"></span>

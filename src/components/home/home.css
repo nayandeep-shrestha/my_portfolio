@@ -5,12 +5,11 @@ h1{
 
 p{
     color: var(--color-text);
-    font-size: 1rem;
+    font-size: 10rem;
     margin-top: 1rem;
 }
 #header{
-    padding-top: 4rem;
-    margin-top: 0rem;
+    margin-top: 9rem;
 }
 .header-container{
     display: flex;

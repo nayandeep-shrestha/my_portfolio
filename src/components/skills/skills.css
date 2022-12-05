@@ -77,15 +77,17 @@
     width: 90%;
 }
 .skills-css,
-.skills-js,
 .skills-react{
     width: 60%;
+}
+.skills-js{
+    width: 70%;
 }
 .skills-node{
     width: 65%;
 }
 .skills-express{
-    width: 55%;
+    width: 60%;
 }
 .skills-photo{
     width: 70%;
@@ -122,7 +124,6 @@
     .skills-container{
       grid-template-columns: repeat(2,1fr);
     }
-   
   }
   
 @media screen and (min-width: 768px){

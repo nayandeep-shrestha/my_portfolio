@@ -38,7 +38,7 @@ const Frontend = (props) => {
         <div className="skills-data">
           <div className="skills-titles">
             <h3 className="skills-name">Javascript</h3>
-            <span className="skills-number">60%</span>
+            <span className="skills-number">70%</span>
           </div>
           <div className="skills-bar">
             <span className="skills-percent skills-js"></span>
