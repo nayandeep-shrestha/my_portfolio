@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 import Loader from './components/loader/Loader'
 import Home from './components/home/Home'
 import Nav from './components/nav/Nav'
-import Navbar from './components/navbar/Navbar'
 import About from './components/about/About'
 import Skills from './components/skills/Skills'
 import Portfolio from './components/portfolio/Portfolio'
@@ -24,7 +23,6 @@ const App = () => {
       {loading? 
         <Loader/> :
         <>
-          {/* <Navbar/> */}
           <Home/>
           <Nav/>
           <About/>
