@@ -24,7 +24,6 @@ const App = () => {
       {loading? 
         <Loader/> :
         <>
-//           <Navbar/>
           <Home/>
           <Nav/>
           <About/>
