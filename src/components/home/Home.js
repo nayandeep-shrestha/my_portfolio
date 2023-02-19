@@ -11,7 +11,6 @@ const Home = () => {
             <h3>Hello, my name is </h3>
             <h1>Nayandeep Shrestha</h1>
             <p>
-//               Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, eius tempore? Alias vero fugiat illo? Officiis impedit ratione ad laborum minima perferendis!
     I am a Frontend Developer        
     </p>
             <a href="#contact" className='btn'>Let's Chat</a> 
