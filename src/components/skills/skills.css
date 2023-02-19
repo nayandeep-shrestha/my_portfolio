@@ -84,7 +84,7 @@
     width: 70%;
 }
 .skills-node{
-    width: 65%;
+    width: 60%;
 }
 .skills-express{
     width: 60%;
@@ -113,7 +113,10 @@
     transform: rotate(180deg);
 }
 
-@media screen and (max-width: 386px){
+@media screen and (min-width: 390px){
+    #skills{
+        padding-top: 10rem;
+    }
     .skills-container{
         margin-left: auto;
         margin-right: auto;
@@ -121,6 +124,7 @@
     }
   }
 @media screen and (min-width: 568px){
+    
     .skills-container{
       grid-template-columns: repeat(2,1fr);
     }

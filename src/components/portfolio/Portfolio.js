@@ -59,19 +59,6 @@ const Portfolio= () => {
               </div>
             </div>
           </SwiperSlide>
-          <SwiperSlide>
-            <div className="portfolio-content grid">
-              <img src={Project1} alt='' className='portfolio-img' />
-              <div className="portfolio-data">
-                <h3 className="portfolio-title">Wordpress website</h3>
-                <p className="portfolio-desc"></p>
-                <a href="https://pasadesigns.com/" target='_blank' rel="noreferrer" className="btn btn-flex">
-                  Demo
-                  <BsArrowRightShort className='btn-icon'/>
-                </a>
-              </div>
-            </div>
-          </SwiperSlide>
           <div className='swiper-button-next'><TfiAngleRight className='swiper-portfolio-icon'/></div>
           <div className='swiper-button-prev'><TfiAngleLeft className='swiper-portfolio-icon'/></div>
         </Swiper>

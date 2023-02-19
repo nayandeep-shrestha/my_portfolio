@@ -1,5 +1,6 @@
 #portfolio{
     padding-top: 4rem;
+    height: 80vh;
 }
 .portfolio-head{
     text-align: center;
@@ -73,6 +74,11 @@
 }
 
 @media screen and (max-width:586px) {
+    #portfolio{
+        padding-top: 10rem;
+        margin-bottom: 0;
+        
+    }
     .portfolio-img{
         width:250px;
     }

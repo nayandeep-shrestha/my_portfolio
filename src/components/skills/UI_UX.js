@@ -19,7 +19,7 @@ const UI_UX = (props) => {
         <div className="skills-data">
           <div className="skills-titles">
             <h3 className="skills-name">Photoshop</h3>
-            <span className="skills-number">70%</span>
+            <span className="skills-number">60%</span>
           </div>
           <div className="skills-bar">
             <span className="skills-percent skills-photo"></span>
@@ -28,7 +28,7 @@ const UI_UX = (props) => {
         <div className="skills-data">
           <div className="skills-titles">
             <h3 className="skills-name">Figma</h3>
-            <span className="skills-number">45%</span>
+            <span className="skills-number">50%</span>
           </div>
           <div className="skills-bar">
             <span className="skills-percent skills-figma"></span>

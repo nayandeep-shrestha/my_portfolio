@@ -20,7 +20,7 @@
     grid-area: message;
 }
 div>button{
-    margin-left: 45%;
+    margin-left: 43%;
     margin-top:3rem;
 }
 button.btn {
@@ -148,7 +148,7 @@ label {
 
 @media screen and (max-width:600px) {
     div>button{
-        margin-left: 28%;
+        margin-left: 23%;
         margin-top:3rem;
     }
     form>button.btn{
