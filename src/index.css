@@ -14,10 +14,11 @@
 :root {
   --color-bg: #0A192F;
   --color-bg-variant: #1b3158;
-  --color-primary: #50ccb3;
-  --color-primary-var: #1cbb9b;
-  --color-secondary: #b6beda;
-  --color-text: #b5c3e7;
+  --color-primary: #007E6A;
+  --color-primary-var: rgb(3, 96, 78);
+  --color-secondary: #93959d;
+  --color-text: #707070;
+  --color-text-main: #404044;
 
   --container-width: 80%;
   --container-width-sh: 60%;
@@ -52,6 +53,9 @@ img{
   height: auto;
   object-fit: cover;
 }
+p{
+  color: var(--color-text)
+}
 /* h2{
   font-size: 2.5rem;
 } */
@@ -62,17 +66,41 @@ img{
     margin-left: auto;
 
 }
-.btn{
+.btn,
+.btn-secondary,
+.btn-var{
+  border-radius: 25px;
+  color: white;
+  padding: 10px 25px;
+  font-size: 1.2rem;
+  transition: var(--transition);
   width: max-content;
   display: inline-block;
-  border: 2px solid var(--color-primary);
-  border-radius: 0.2rem;
-  color: var(--color-primary-var);
-  padding: 0.35rem 0.7rem;
-  font-size: 1.25rem;
+  margin-top: 1.5rem;
 }
 
+.btn{
+  background-color: var(--color-primary);
+  margin-right: 10px;
+}
 .btn:hover{
-  background: rgba(106, 191, 174, 0.2);
+  background: var(--color-primary-var);
   cursor: pointer;
+}
+
+.btn-secondary{
+  background-color: #70707071;
+  border:1px solid white;
+}
+.btn-secondary:hover{
+  background-color: white;
+  color: var(--color-text)
+}
+.btn-var{
+  background-color: var(--color-secondary);
+}
+.btn-var:hover{
+  background-color: transparent;
+  color: var(--color-text);
+  border: 2px solid var(--color-text);
 }

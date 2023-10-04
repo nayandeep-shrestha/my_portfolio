@@ -1,35 +1,100 @@
 #about{
-    padding-top: 4rem;
+    padding-top: 2rem;
     margin-top: 0rem;
 }
 h4{
     color: var(--color-secondary);
     font-size: 1.2rem ;
 }
-p{
-    color: var(--color-text);
-    font-size: 20px;
-    margin-bottom: 2rem;
-}
+
 small{
     color: var(--color-text);
     font-size: 0.9rem;
 }
 .about-container{
-    display: grid;
-    grid-template-columns: 35% 50% ;
-    gap: 15%;
-    width: var(--container-width);
+    display: flex;
+    /* gap: 15%; */
     margin-top: 5rem;
-    margin-left: auto;
-    margin-right: auto;
+ 
 }
 
 .about-me{
     width: 100%;
+    height: 90%;
+    overflow: hidden;
+    flex: 0 0 auto;
+    width: 42%;
+    padding: 0 2rem;
+}
+.about-img{
+    border-radius: 10px;
 }
 
-.about-cards{
+.about-content{
+    flex: 0 0 auto;
+    width:58%;
+    padding: 0 2rem;    
+    align-self: center;
+}
+.about-content>p{
+    padding-right: 2rem;
+    margin: 1rem 0;
+    word-spacing: 0.3rem;
+    letter-spacing: 0.05rem;
+}
+.about-content>h3{
+    color:var(--color-text);
+    font-weight: 400;
+    margin-bottom:0.5rem;
+}
+.about-content>h1{
+    color: var(--color-text-main);
+    margin-bottom:1rem;
+}
+.my-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
+    border-top: 1px solid #eee;
+    margin-top: 45px;
+    padding-top: 30px;
+}
+.single-info span {
+    color: var(--color-text-main);
+    font-weight: 400;
+    margin-right: 10px;
+    font-weight: 600;
+    font-size: 1.2em;
+    min-width: 60px;
+}
+.single-info p {
+    display: inline-block;
+}
+.single-info p a{
+    color: var(--color-text)
+}
+.follow-social{
+    margin-top: 3rem;
+}
+ul.follow-social li {
+    display: inline-block;
+    margin-right: 15px;
+}
+li {
+    list-style-type: none;
+}
+ul.follow-social li>h5{
+    color:var(--color-text-main);
+    font-size: 1.2em;
+}
+.follow-icons{
+    color: var(--color-primary);
+    font-size: 1.2rem;
+}
+.about-btn{
+    margin-top: 2rem;
+}
+/* .about-cards{
     display: flex;
     gap: 2rem;
 }
@@ -50,7 +115,7 @@ small{
 .about-icon{
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
-}
+} */
 
 
 @media screen and (max-width: 1024px) {
@@ -81,7 +146,7 @@ small{
         width: 65%;
         margin: 3rem auto 3rem;
     }
-    .about-cards{
+    /* .about-cards{
         flex-direction: column;
         width: var(--container-width);
         margin-left: auto;
@@ -90,7 +155,7 @@ small{
     .about-card{
         margin-bottom: 0;
         padding: 2rem 0rem;
-    }
+    } */
     .about-content{
         text-align: center;
     }

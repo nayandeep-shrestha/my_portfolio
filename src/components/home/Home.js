@@ -2,6 +2,7 @@ import React from 'react'
 import './home.css'
 import { TypeAnimation } from 'react-type-animation';
 import ME from '../../assets/me.png'
+import CV from '../../assets/cv.pdf'
 import Socials from './Socials'
 
 const Home = () => {
@@ -29,15 +30,14 @@ const Home = () => {
             <span class="cursor typing">&nbsp;</span>
           </h2>
           <p>
-            I am a web developer with a passion for coding and a knack for transforming ideas into responsive, dynamic websites. 
+            I am a web developer with a passion for coding and a knack for transforming ideas into responsive, dynamic websites.
           </p>
           {/* <p>I thrive on the challenges of building exceptional web solutions.</p> */}
           <a href="#contact" className='btn'>Let's Chat</a>
+          <a href={CV} className='btn-secondary' download>Download CV</a>
         </div>
         <div className='home-me'>
-          <div className='home-me-img'>
-            {/* <img src={ME} alt="me" /> */}
-          </div>
+          <img src={ME} alt="me" className='home-me-img' />
         </div>
       </div>
       <Socials />
