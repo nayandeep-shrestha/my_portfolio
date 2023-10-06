@@ -1,19 +1,81 @@
-#portfolio{
+#portfolio {
     padding-top: 6rem;
 }
-.portfolio-head{
+
+.portfolio-head {
     text-align: center;
     margin-bottom: 3rem;
 }
-.portfolio-head>h1{
+
+.portfolio-head>h1 {
     color: var(--color-text-main);
     font-size: 2rem;
 }
-.portfolio-head>h4{
+
+.portfolio-head>h4 {
     color: var(--color-text);
     font-weight: 400;
 }
-.portfolio-container{
+
+.portfolio-area{
+    display: flex;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    /* overflow: hidden; */
+    flex-direction: column;
+    gap: 30px;
+}
+.portfolio-item{
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+    border: 2px solid rgb(170, 169, 169);
+    border-radius:10px ;
+    padding: 3px;
+}
+.reverse{
+    flex-direction: row-reverse;
+}
+.img-block{
+    flex: 0 0 auto;
+    width: 40%;
+    align-self: center;
+}
+.portfolio-content{
+    flex: 0 0 auto;
+    width: 56%;
+    padding: 0 2rem;
+    align-self: center;
+}
+.portfolio-content>h4{
+    color: var(--color-secondary);
+    font-weight: 500;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+.portfolio-content>h2{
+    color: var(--color-text-main);
+}
+.portfolio-content>h3{
+    color: var(--color-text);
+    margin-bottom: 1rem;
+    font-weight: 400;
+    font-size: 1rem;
+}
+.portfolio-content-para>p{
+    padding-right: 2rem;
+    margin-top: 0.5rem;
+    word-spacing: 0.2rem;
+}
+
+.portfolio-tools{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.2rem 2rem 1rem 1rem;
+    color: var(--color-text);
+}
+/*.portfolio-container{
     overflow: initial;
     max-width:768px;
     margin-left: auto;
@@ -24,10 +86,10 @@
     display: grid;
     gap: 1.5rem;
 }
-/* .portfolio-content{
+ .portfolio-content{
     padding: 0 1.5rem;
-} */
-.portfolio-img{
+}
+ .portfolio-img{
     width: 450px;
     justify-self: center;
     border-radius: 1rem;
@@ -59,15 +121,16 @@
 .btn-icon:hover{
     transform: translateX(.25rem);
 }
-
+*/
 .swiper-button-next::after,
 .swiper-button-prev::after{
     content: '';
     color:#ea947f;
+    font-size: 1rem;
 }
 
 .swiper-portfolio-icon{
-    font-size: 2rem;
+    font-size: 5rem;
     color: var(--color-primary-var);
 }
 .swiper-pagination-bullet{
@@ -75,47 +138,85 @@
 }
 .swiper-pagination-bullet-active{
     background-color: var(--color-primary-var);
+} 
+.portfolio-swiper{
+    border-radius: 10px;
+}
+/* 
+.portfolio-area {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    gap: 15px;
 }
 
-@media screen and (max-width:586px) {
-    #portfolio{
-        padding-top: 10rem;
-        margin-bottom: 0;
-        
-    }
-    .portfolio-img{
-        width:250px;
-    }
-    .portfolio-data{
-        margin-left: 4.5rem;
-    }
-    .portfolio-container{
-        width: 85%;
+.portfolio-item {
+    flex: 100%;
+    max-width: 100%;
+}
+
+.portfolio-item img {
+    vertical-align: middle;
+}
+
+.img-block {
+    position: relative;
+    width: 100%;
+}
+
+.project-img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: all 0.4s ease-in-out 0s;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+}
+
+.img-block:hover .overlay {
+    opacity: 1;
+}
+
+.text {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+.text>h4{
+    font-size: 18px;
+}
+.text>span{
+    font-size: 12px;
+}
+/* Tablet Styles 
+@media only screen and (min-width: 481px) {
+    .portfolio-item {
+        flex: 50%;
+        max-width: 50%;
     }
 }
-@media screen and (min-width: 587px) {
-    .portfolio-img{
-        width:300px;
-    }
-    .portfolio-data{
-        margin-left: 9rem;
-    }
-    .portfolio-container{
-        width: 70%;
-    }
-} 
-  
- @media screen and (min-width: 1024px) {
-    .portfolio-img{
-        width:450px;
-    }
-    .portfolio-data{
-        margin-left: 10rem;
-    }
-    .portfolio-container{
-        width: 70%;
-    }
-} 
-  
 
-  
+
+/* Desktop Styles 
+@media only screen and (min-width: 1024px) {
+    .portfolio-item {
+        flex: 0 0 auto;
+        max-width: 32%;
+    }
+} */
