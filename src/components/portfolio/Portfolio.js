@@ -13,9 +13,10 @@ import {TfiAngleLeft} from 'react-icons/tfi'
 const Portfolio= () => {
   return (
     <section id="portfolio">
+      <div className="container">
       <div className='portfolio-head'>
-        <span>My recent work</span>
-        <h2>Portfolio</h2>
+        <h4>My recent work</h4>
+        <h1>Portfolio</h1>
       </div>
       <div className="portfolio-container">
         <Swiper
@@ -63,6 +64,7 @@ const Portfolio= () => {
           <div className='swiper-button-prev'><TfiAngleLeft className='swiper-portfolio-icon'/></div>
         </Swiper>
         <div className='swiper-pagination'></div>
+      </div>
       </div>
     </section>
   )

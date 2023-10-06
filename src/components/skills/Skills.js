@@ -11,11 +11,12 @@ const Skills = () => {
 
   return (
     <section id="skills">
+      <div className="container">
         <div className="skills-head">
-          <h2>Skills</h2>
-          <span>My techinal level</span>
+          <h1>Skills</h1>
+          <h3>My techinal level</h3>
         </div>
-        <div className="skills-container grid">
+        <div className="skills-list skills-grid">
             <div>
               <Frontend list={list} setList={setList} />
               <Backend list={list} setList={setList} />
@@ -25,6 +26,7 @@ const Skills = () => {
               <Other list={list} setList={setList} />   
             </div>       
         </div>
+      </div>
     </section>
   )
 }

@@ -1,14 +1,17 @@
 #portfolio{
-    padding-top: 4rem;
-    height: 80vh;
+    padding-top: 6rem;
 }
 .portfolio-head{
     text-align: center;
     margin-bottom: 3rem;
 }
-.portfolio-head>span{
-    color: var(--color-secondary);
-    font-size: 1rem;
+.portfolio-head>h1{
+    color: var(--color-text-main);
+    font-size: 2rem;
+}
+.portfolio-head>h4{
+    color: var(--color-text);
+    font-weight: 400;
 }
 .portfolio-container{
     overflow: initial;

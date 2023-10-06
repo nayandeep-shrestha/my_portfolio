@@ -16,9 +16,9 @@ const Home = () => {
             <TypeAnimation
               sequence={[
                 500,
-                'Web Developer',
+                'Frontend Developer',
                 1000,
-                'Web Designer',
+                'Backend Developer',
                 1000
 
               ]}

@@ -6,7 +6,7 @@ import {TfiAngleDown} from 'react-icons/tfi'
 const Backend = (props) => {
    
   return (
-    <div onClick={() => props.setList('backend')} 
+    <div onClick={() => props.list === 'backend' ? props.setList('') : props.setList('backend')} 
         className={props.list === 'backend'? 'skills-open': 'skills-close'}>
       <div className="skills-header">
         <FiServer className='skills-icon'/>

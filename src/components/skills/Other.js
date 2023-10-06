@@ -5,7 +5,7 @@ import {TfiAngleDown} from 'react-icons/tfi'
 
 const Other = (props) => {
   return (
-    <div onClick={() => props.setList('other')}
+    <div onClick={() => props.list === 'other' ? props.setList('') : props.setList('other')}
          className={props.list === 'other' ? 'skills-open': 'skills-close'}>
       <div className="skills-header">
         <MdMoreVert className='skills-icon'/>

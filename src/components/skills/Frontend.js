@@ -6,7 +6,7 @@ import {TfiAngleDown} from 'react-icons/tfi'
 const Frontend = (props) => {
     
   return (
-    <div onClick={() => props.setList('frontend')}
+    <div onClick={() => props.list === 'frontend' ? props.setList('') : props.setList('frontend')}
          className={props.list === 'frontend' ? 'skills-open': 'skills-close'} >
       <div className="skills-header">
         <BiCodeCurly className='skills-icon'/>

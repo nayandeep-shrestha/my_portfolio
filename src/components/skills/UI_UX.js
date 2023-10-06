@@ -5,7 +5,7 @@ import {TfiAngleDown} from 'react-icons/tfi'
 
 const UI_UX = (props) => {
   return (
-    <div onClick={() => props.setList('designer')} 
+    <div onClick={() =>  props.list === 'designer' ? props.setList('') :props.setList('designer')} 
          className={props.list === 'designer' ? 'skills-open': 'skills-close'}>
       <div className="skills-header">
         <HiOutlineSwatch className='skills-icon'/>
