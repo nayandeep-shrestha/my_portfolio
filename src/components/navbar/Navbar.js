@@ -3,7 +3,6 @@ import './navbar.css'
 import { useState } from 'react'
 import MainLogo from '../../assets/mainLogo.png';
 import { CgMenu } from "react-icons/cg"
-import {FaWindowClose} from "react-icons/fa"
 
 const NavBar = () => {
   const [active, setActive] = useState("")

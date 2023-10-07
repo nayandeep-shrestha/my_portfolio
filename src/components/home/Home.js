@@ -1,21 +1,20 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './home.css'
 import { TypeAnimation } from 'react-type-animation';
 import ME from '../../assets/me.png'
 import CV from '../../assets/cv.pdf'
-import Socials from './Socials'
 
 const Home = () => {
-  const [showSocial, setShowSocial] = useState('true')
-  const toggleSocial = () => {
-    if (window.scrollY >= 200) {
-        setShowSocial(false);
-    }
-    else {
-        setShowSocial(true);
-    }
-};
-window.addEventListener('scroll', toggleSocial);
+//   const [showSocial, setShowSocial] = useState('true')
+//   const toggleSocial = () => {
+//     if (window.scrollY >= 200) {
+//         setShowSocial(false);
+//     }
+//     else {
+//         setShowSocial(true);
+//     }
+// };
+// window.addEventListener('scroll', toggleSocial);
   return (<>
     <section id="home">
       <div className='home-container container'>
