@@ -20,9 +20,11 @@
     font-weight: 400;
 }
 .skills-list{
-    max-width: 90%;
     margin-left: auto;
     margin-right: auto;
+    row-gap: 1rem;
+    padding-left: 2.7rem;
+    padding-right: 1rem;
 }
 .skills-grid{
     display: grid;
@@ -55,11 +57,6 @@
     margin-left: auto;
     transition: 0.6s;
 }
-.skills-list{
-    row-gap: 1rem;
-    padding-left: 2.7rem;
-    padding-right: 1rem;
-}
 .skills-titles{
     color: var(--color-secondary);
     display:flex;
@@ -71,37 +68,40 @@
 }
 .skills-bar,
 .skills-percent{
-    height: 4px ;
+    height: 5px ;
     border-radius: 0.25rem;
 }
 .skills-bar{
-    background-color: rgb(112, 111, 111);
+    background-color: rgb(144, 143, 143);
 }
 .skills-percent{
     display: block;
-    background-color: var(--color-primary-var);
+    background-color: var(--color-primary);
 }
 .skills-html{
     width: 90%;
 }
 .skills-css,
 .skills-react{
-    width: 60%;
+    width: 70%;
 }
 .skills-js{
-    width: 70%;
+    width: 80%;
 }
 .skills-node{
-    width: 60%;
+    width: 65%;
 }
 .skills-express{
-    width: 60%;
+    width: 65%;
 }
-.skills-photo{
+.skills-mongo{
     width: 70%;
 }
+.skills-photo{
+    width: 60%;
+}
 .skills-figma{
-    width: 45%;
+    width: 65%;
 }
 .skills-canva{
     width: 70%;
@@ -121,27 +121,16 @@
     transform: rotate(180deg);
 }
 
-@media screen and (min-width: 390px){
-    /* #skills{
-        padding-top: 10rem;
-    } */
-    /* .skills-container{
-        margin-left: auto;
-        margin-right: auto;
-        max-width: 80%;
-    } */
-  }
+@media screen and (max-width: 1024px) {
+    .skills-title{
+        font-size: 1.3rem;
+    }
+}
 @media screen and (min-width: 568px){
-    
     .skills-grid{
       grid-template-columns: repeat(2,1fr);
     }
   }
   
-@media screen and (min-width: 768px){
-    /* .skills-container{
-      margin-left: auto;
-      margin-right: auto;
-    } */
-  }
+
   

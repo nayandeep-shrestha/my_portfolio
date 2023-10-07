@@ -8,18 +8,23 @@
     padding-top: 2rem;
     margin-top: 1.5rem;
 }
+
 #name {
     grid-area: name;
 }
+
 #email {
     grid-area: email;
 }
+
 #subject {
     grid-area: subject;
 }
+
 #message {
     grid-area: message;
 }
+
 /* div>button{
     margin-left: 43%;
     margin-top:3rem;
@@ -29,10 +34,11 @@
     font-size: 1.5rem;
     font-family: inherit;
 } */
-.contact-form .btn{
+.contact-form .btn {
     margin-left: 10%;
     margin-bottom: 2rem;
 }
+
 /* .contact-form-icon {
     font-size: 1.5rem;
     transition:0.4s ease-in-out;
@@ -46,16 +52,18 @@
 .form {
     margin-top: 0;
     margin-bottom: 2.5rem;
-    position: relative; 
+    position: relative;
     padding: 0 2rem;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
 }
+
 .form-control {
     padding: 0.5rem 0.5rem;
     color: var(--color-text);
 }
+
 .form .form-control {
     border: none;
     border-bottom: 1px solid #a0a0a0;
@@ -65,9 +73,11 @@
     font-size: 1.15rem;
     line-height: inherit;
 }
+
 .form-control:focus {
     outline: none;
 }
+
 .form span {
     position: absolute;
     bottom: 0;
@@ -79,16 +89,19 @@
     transform: translateX(-50%);
 }
 
-.form-control:focus + span {
+.form-control:focus+span {
     width: 90%;
 }
+
 textarea {
     height: 100%;
     resize: vertical;
 }
-textarea:focus + span {
+
+textarea:focus+span {
     width: 90%;
 }
+
 label {
     color: var(--color-secondary);
 }
@@ -102,7 +115,9 @@ label {
     transition: all 1s ease;
     pointer-events: none;
 }
-.form .form-control:focus ~ label, .form .form-control:valid ~ label {
+
+.form .form-control:focus~label,
+.form .form-control:valid~label {
     margin-top: -25px;
     -webkit-transition: all 1s ease;
     -moz-transition: all 1s ease;
@@ -110,6 +125,7 @@ label {
     -o-transition: all 1s ease;
     transition: all 1s ease;
 }
+
 /* 
 .contact-form-popup{
     position: absolute;
@@ -146,14 +162,23 @@ label {
     z-index:100;
 } */
 
-@media screen and (max-width:600px) {
-    .contact-form .btn{
+@media screen and (max-width:850px) {
+    .contact-form .btn {
         font-size: 1.2rem;
     }
-    /* .contact-form-popup{
-        width: 85%;
-        height: max-content;
-    } */
+    .contact-form {
+        width: 100%;
+        /* display: flex;
+        flex-direction: column; */
+    }
+}
+@media screen and (max-width: 686px) {
+    .contact-form{
+        margin:0;
+        padding-top: 1rem;
+    }
+}
+@media screen and (max-width: 551px) {
     .contact-form{
         display: flex;
         flex-direction: column;

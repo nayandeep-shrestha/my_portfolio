@@ -8,7 +8,15 @@ import { RiMessengerLine } from "react-icons/ri"
 const Contact = () => {
   return (
     <section id="contact">
-        <h1 className='contact-head'>Let's Get In Touch!</h1>
+      <h1 className='contact-head'>Let's Get In Touch!</h1>
+      <span className='mobile-contact'>
+        <a href="mailto:shresnayan@gmail.com" target="_blank" rel="noreferrer">
+          shresnayan@gmail.com
+        </a> |
+        <a href="https://api.whatsapp.com/send?phone=+9779861236946!text=Hello,how may I help you" target="_blank" rel="noreferrer">
+          &nbsp;+977 9861236946
+        </a>
+      </span>
       <div className='container'>
         <div className="contact-container">
           <div className="contact-cards">
@@ -27,7 +35,7 @@ const Contact = () => {
             <a href="https://m.me/nayandeep.shrestha" target="_blank" rel="noreferrer">
               <div className='contact-card card3'>
                 <RiMessengerLine className='contact-icon' />
-                <p>Nayandeep Shrestha</p>
+                <p>Nayandeep</p>
               </div>
             </a>
           </div>

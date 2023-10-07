@@ -108,7 +108,7 @@ const Portfolio = () => {
               <h3>An Ecommerce Site</h3>
               <div className='portfolio-content-para'>
                 <p>
-                  TechShop is a comprehensive FullStack ecommerce website that I developed during my journey of mastering the MERN stack.
+                  TechShop is a FullStack ecommerce website that I developed during my journey of mastering the MERN stack.
                 </p>
                 <div className="portfolio-tools">
                   <ul>

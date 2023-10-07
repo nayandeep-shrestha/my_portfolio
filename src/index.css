@@ -30,7 +30,7 @@ html{
 }
 
 ::-webkit-scrollbar {
-  /* display: none; */
+  display: none;
 }
 
 body{
@@ -98,4 +98,22 @@ p{
   background-color: transparent;
   color: var(--color-text);
   border: 2px solid var(--color-text);
+}
+@media screen and (max-width: 1200px) {
+  .btn,
+    .btn-var,
+    .btn-secondary{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+  .container{
+    width: 90%;
+  }
+}
+@media screen and (max-width: 750px) {
+  .container{
+    width: 95%;
+  }
 }

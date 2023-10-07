@@ -35,6 +35,15 @@ const Backend = (props) => {
             <span className="skills-percent skills-express"></span>
           </div>
         </div>
+        <div className="skills-data">
+          <div className="skills-titles">
+            <h3 className="skills-name">MongoDb</h3>
+            <span className="skills-number">70%</span>
+          </div>
+          <div className="skills-bar">
+            <span className="skills-percent skills-mongo"></span>
+          </div>
+        </div>
       </div>
     </div>
   )

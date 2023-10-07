@@ -53,9 +53,9 @@
 .nav-under:after{
     content:"";
     position: absolute;
-    background-color: var(--color-primary-var);
+    background-color: var(--color-primary);
     width:0;
-    height: 1.5px;
+    height: 2px;
     left: 0;
     bottom:-8px;
     transition: 0.3s;
@@ -69,4 +69,38 @@
     font-size: 1.7rem;
     color: var(--color-secondary);
     cursor: pointer;
+}
+.nav-ham{
+    background: transparent;
+    color: white;
+}
+.offcanvas-body{
+    display: none;
+    position:absolute;
+    top: 90px;
+    background: rgba(14, 68, 78, 0.85);
+    width: 100%;
+    left:0;
+}
+.offcanvas-body>ul{
+    width: 80%;
+    margin:10px auto;
+    text-align: center;
+    padding-top: 12px;
+    padding-bottom: 1px;
+    border-radius: 5px;
+    background: white;
+}
+.offcanvas-body .nav-text{
+    color: var(--color-text-main);
+    /* margin-bottom: 1rem; */
+}
+.offcanvas-body>ul>li{
+    margin-bottom: 12px;
+}
+
+@media screen and (max-width:900px) {
+    .nav-menus{
+        display: none;
+    }
 }

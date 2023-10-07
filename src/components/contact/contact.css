@@ -1,24 +1,29 @@
-#contact{
+#contact {
     padding-top: 4rem;
     padding-bottom: 2rem;
     margin-top: 4rem;
     background-color: #F6F6F6;
+    overflow: hidden;
 }
-.contact-head{
+
+.contact-head {
     color: var(--color-text-main);
     font-size: 2rem;
     text-align: center;
 }
+
 .contact-container {
-    padding: 2rem;  
+    padding: 2rem;
 }
-.contact-cards{
+
+.contact-cards {
     width: 80%;
     margin: 0rem auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: "card1 card2 card3";
 }
+
 .contact-card {
     border: 1px solid transparent;
     border-radius: 1rem;
@@ -28,48 +33,60 @@
     margin: 1.2rem;
     background: var(--color-primary);
 }
-.contact-card>p{
+
+.contact-card>p {
     color: white !important;
     margin-top: 1rem;
 }
+
 .contact-card:hover {
     background: transparent;
     border: 2px solid var(--color-primary);
     color: var(--color-primary);
 }
-.contact-card:hover>p{
+
+.contact-card:hover>p {
     color: var(--color-primary) !important;
 }
+
 .card1 {
     grid-area: card1;
 }
+
 .card2 {
     grid-area: card2;
 }
+
 .card3 {
     grid-area: card3;
 }
+
 .contact-icon {
     font-size: 1.75rem;
 }
-
-@media screen and (max-width:600px) {
-    #contact{
-        padding-top: 4rem;
-        height: 82vh;
+.mobile-contact{
+    display: none;
+}
+@media screen and (max-width:850px) {
+    #contact .container {
+        width: 100%;
     }
-    .contact-container {
-        width: var(--container-width);
-        display: flex;
-        flex-direction: column;
-        margin-top: 1.5rem;
+    .contact-cards{
+        width: 100%;
     }
-    .contact-card{
-        background: var(--color-bg-variant);
-        margin-bottom: 0rem;
+}
+@media screen and (max-width:686px) {
+    .contact-cards{
+        display: none;
     }
-    .contact-card:hover {
-        border: 1px solid transparent;
+    .mobile-contact{
+        display: block;
+        text-align: center;
+        font-size: 0.95rem;
+        margin-top: 1rem;
     }
-    
+    .mobile-contact>a{
+        color: var(--color-text-main);
+        
+    }
 }
