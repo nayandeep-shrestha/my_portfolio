@@ -12,9 +12,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Keyboard } from "swiper";
 import { BsWordpress } from 'react-icons/bs'
 import { BiLinkExternal,BiLogoGithub } from 'react-icons/bi'
-// import { BsArrowRightShort } from 'react-icons/bs'
-// import { TfiAngleRight } from 'react-icons/tfi'
-// import { TfiAngleLeft } from 'react-icons/tfi'
 
 const Portfolio = () => {
   return (
@@ -80,8 +77,8 @@ const Portfolio = () => {
                   e1: '.swiper-pagination'
                 }}
                 autoplay={{
-                  delay: 3000,
-                  pauseOnMouseEnter: true
+                  delay: 2000,
+                  pauseOnMouseEnter: false
                 }}
                 keyboard={true}
                 modules={[Pagination, Keyboard, Autoplay]}

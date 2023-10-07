@@ -4,6 +4,8 @@
     margin-top: 3.8rem;
     margin-bottom: 3rem;
     background-color: #F6F6F6;
+    border-top-left-radius:20%;
+    border-bottom-right-radius:20%;
 }
 .skills-head{
     text-align: center;

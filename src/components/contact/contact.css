@@ -1,27 +1,44 @@
 #contact{
-    padding-top: 4rem; 
-    height:70vh; 
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+    margin-top: 4rem;
+    background-color: #F6F6F6;
+}
+.contact-head{
+    color: var(--color-text-main);
+    font-size: 2rem;
+    text-align: center;
 }
 .contact-container {
-    width: var(--container-width-sh);
-    margin-top: 2rem;
-    margin-left: auto;
-    margin-right: auto;
+    padding: 2rem;  
+}
+.contact-cards{
+    width: 80%;
+    margin: 0rem auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: "card1 card2 card3";
-
 }
 .contact-card {
     border: 1px solid transparent;
     border-radius: 1rem;
-    padding: 1.5rem 1rem 0rem 1rem;
+    padding: 1.5rem 0rem;
     text-align: center;
     transition: var(--transition);
     margin: 1.2rem;
+    background: var(--color-primary);
+}
+.contact-card>p{
+    color: white !important;
+    margin-top: 1rem;
 }
 .contact-card:hover {
-    background: var(--color-bg-variant);
+    background: transparent;
+    border: 2px solid var(--color-primary);
+    color: var(--color-primary);
+}
+.contact-card:hover>p{
+    color: var(--color-primary) !important;
 }
 .card1 {
     grid-area: card1;

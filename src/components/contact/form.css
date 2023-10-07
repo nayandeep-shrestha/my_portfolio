@@ -1,11 +1,12 @@
 .contact-form {
-    width: 95%;
+    width: var(--container-width);
     margin: 0rem auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas: "name message" "email message" "subject message";
     padding-top: 2rem;
+    margin-top: 1.5rem;
 }
 #name {
     grid-area: name;
@@ -19,20 +20,20 @@
 #message {
     grid-area: message;
 }
-div>button{
+/* div>button{
     margin-left: 43%;
     margin-top:3rem;
-}
-button.btn {
+} */
+/* button.btn {
     background: transparent;
     font-size: 1.5rem;
     font-family: inherit;
-}
-form>button.btn{
+} */
+.contact-form .btn{
     margin-left: 10%;
     margin-bottom: 2rem;
 }
-.contact-form-icon {
+/* .contact-form-icon {
     font-size: 1.5rem;
     transition:0.4s ease-in-out;
     margin-left: 95%;
@@ -41,12 +42,15 @@ form>button.btn{
 .contact-form-icon:hover{
     transform: rotate(180deg);
     cursor: pointer;
-}
+} */
 .form {
     margin-top: 0;
     margin-bottom: 2.5rem;
     position: relative; 
     padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
 }
 .form-control {
     padding: 0.5rem 0.5rem;
@@ -54,7 +58,7 @@ form>button.btn{
 }
 .form .form-control {
     border: none;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #a0a0a0;
     width: 100%;
     background: transparent;
     font-family: inherit;
@@ -69,7 +73,7 @@ form>button.btn{
     bottom: 0;
     width: 0px;
     height: 2.5px;
-    background-color: var(--color-primary-var);
+    background-color: var(--color-primary);
     transition: all 0.8s;
     left: 52%;
     transform: translateX(-50%);
@@ -88,11 +92,7 @@ textarea:focus + span {
 label {
     color: var(--color-secondary);
 }
-.form {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-}
+
 .form .label {
     position: absolute;
     -webkit-transition: all 1s ease;
@@ -110,7 +110,7 @@ label {
     -o-transition: all 1s ease;
     transition: all 1s ease;
 }
-
+/* 
 .contact-form-popup{
     position: absolute;
     top: 50%;
@@ -144,20 +144,16 @@ label {
     bottom: 0;
     background: rgba(120, 120, 120, 0.5);
     z-index:100;
-}
+} */
 
 @media screen and (max-width:600px) {
-    div>button{
-        margin-left: 23%;
-        margin-top:3rem;
-    }
-    form>button.btn{
+    .contact-form .btn{
         font-size: 1.2rem;
     }
-    .contact-form-popup{
+    /* .contact-form-popup{
         width: 85%;
         height: max-content;
-    }
+    } */
     .contact-form{
         display: flex;
         flex-direction: column;
