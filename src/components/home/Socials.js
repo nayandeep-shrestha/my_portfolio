@@ -1,9 +1,5 @@
-import React from 'react'
 import './social.css'
-import {BsGithub} from 'react-icons/bs'
-import {BsLinkedin} from 'react-icons/bs'
-import {BsTwitter} from 'react-icons/bs'
-import {BsInstagram} from 'react-icons/bs'
+import {BsGithub, BsLinkedin, BsTwitter, BsInstagram} from 'react-icons/bs'
 
 const Socials = () => {
   return (
