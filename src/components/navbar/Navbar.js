@@ -31,7 +31,7 @@ const NavBar = () => {
           <a href="#home"
             onClick={() => setActive('#home')}
             className={active === '#home' ? 'active' : ''}>
-            <img src={MainLogo} alt="" width="20px" height="20px" />
+            <img src={MainLogo} alt="" />
           </a>
         </div>
         <div className="nav-menus">

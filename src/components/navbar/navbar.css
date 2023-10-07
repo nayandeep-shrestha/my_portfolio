@@ -8,7 +8,7 @@
 .nav{
     padding: 0px;
     transition: all 0.4s ease 0s;
-    height: 100px;
+    height: 110px;
     display: grid;
     align-items: center;
     box-shadow: 0 3px 9px rgba(0, 0, 0, 0.05);
@@ -19,7 +19,7 @@
     z-index: 9 !important;
     background: rgba(14, 68, 78, 0.85);
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.05);
-    height: 90px;
+    height: 100px;
 }
 
 .nav-container{
@@ -27,7 +27,7 @@
     justify-content: space-between;
 }
 .nav-logo{
-    padding: 1rem 2rem;
+    padding: 1rem 1rem;
 }
 .nav-logo .nav-text{
     font-weight: 800;
@@ -71,6 +71,7 @@
     cursor: pointer;
 }
 .nav-ham{
+    display: none;
     background: transparent;
     color: white;
 }
@@ -100,7 +101,19 @@
 }
 
 @media screen and (max-width:900px) {
+    .nav-ham{
+        display: block;
+    }
     .nav-menus{
         display: none;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .nav-logo{
+        padding-left: 0rem;
+    }
+    .nav .nav-container{
+        width: 100%;
     }
 }
