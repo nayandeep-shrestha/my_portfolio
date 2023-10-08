@@ -1,7 +1,7 @@
 import React from 'react'
 import './home.css'
 import { TypeAnimation } from 'react-type-animation';
-import ME from '../../assets/me.png'
+import ME from '../../assets/me.webp'
 import CV from '../../assets/cv.pdf'
 
 const Home = () => {

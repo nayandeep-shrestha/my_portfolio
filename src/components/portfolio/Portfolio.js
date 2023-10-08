@@ -1,10 +1,10 @@
 import React from 'react'
 import './portfolio.css'
-import Pasa1 from '../../assets/project1.1.png'
-import Pasa2 from '../../assets/project1.2.png'
-import Ecom1 from '../../assets/project2.1.png'
-import Ecom2 from '../../assets/project2.2.png'
-import Ecom3 from '../../assets/project2.3.png'
+import Pasa1 from '../../assets/project1.1.webp'
+import Pasa2 from '../../assets/project1.2.webp'
+import Ecom1 from '../../assets/project2.1.webp'
+import Ecom2 from '../../assets/project2.2.webp'
+import Ecom3 from '../../assets/project2.3.webp'
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";

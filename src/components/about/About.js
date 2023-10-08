@@ -1,7 +1,7 @@
 import React from 'react'
 import './about.css'
 import CV from '../../assets/cv.pdf'
-import DP from '../../assets/about.png'
+import DP from '../../assets/about.webp'
 import { BsGithub } from 'react-icons/bs'
 import { BsLinkedin } from 'react-icons/bs'
 import { BsTwitter } from 'react-icons/bs'
