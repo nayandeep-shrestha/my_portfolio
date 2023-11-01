@@ -102,7 +102,7 @@ const Portfolio = () => {
               <h4>Personal Project</h4>
               <h2>
                 TechShop
-                <a href="https://https://tech-shopp.netlify.app/" target='_blank' rel='noreferrer'> <BiLinkExternal color='#03604e' /></a>
+                <a href="https://tech-shopp.netlify.app/" target='_blank' rel='noreferrer'> <BiLinkExternal color='#03604e' /></a>
                 <a href="https://github.com/nayandeep-shrestha/ecommerce" target="_blank" rel="noopener noreferrer" style={{marginLeft:'0.5rem'}}><BiLogoGithub color='black'/></a>
               </h2>
               <h3>An Ecommerce Site</h3>
