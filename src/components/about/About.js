@@ -1,6 +1,6 @@
 import React from 'react'
 import './about.css'
-import CV from '../../assets/cv.pdf'
+import CV from '../../assets/Nayandeep_CV.pdf'
 import DP from '../../assets/about.webp'
 import { BsGithub } from 'react-icons/bs'
 import { BsLinkedin } from 'react-icons/bs'

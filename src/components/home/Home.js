@@ -2,7 +2,7 @@ import React from 'react'
 import './home.css'
 import { TypeAnimation } from 'react-type-animation';
 import ME from '../../assets/me.webp'
-import CV from '../../assets/cv.pdf'
+import CV from '../../assets/Nayandeep_CV.pdf'
 
 const Home = () => {
 //   const [showSocial, setShowSocial] = useState('true')
