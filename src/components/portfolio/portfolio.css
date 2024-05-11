@@ -75,53 +75,7 @@
     padding: 0.2rem 2rem 1rem 1rem;
     color: var(--color-text);
 }
-/*.portfolio-container{
-    overflow: initial;
-    max-width:768px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 5rem;
-}
-.grid{
-    display: grid;
-    gap: 1.5rem;
-}
- .portfolio-content{
-    padding: 0 1.5rem;
-}
- .portfolio-img{
-    width: 450px;
-    justify-self: center;
-    border-radius: 1rem;
-}
-.portfolio-data{
-    margin-left: 10rem;
-    margin-top: -1rem;
-    margin-bottom: 3rem;
-}
-.portfolio-title{
-    font-size: 1.6rem;
-    color: var(--color-secondary);
-}
-.portfolio-desc{
-    color: var(--color-text);
-    margin-bottom: 1rem;
-    font-size: 1rem;
-}
 
-.btn-icon{
-    font-size: 1.25rem;
-    margin-left: 0.5rem;
-    transition: 0.3s;
-}
-.btn-flex{
-    display: inline-flex;
-    align-items: center;
-}
-.btn-icon:hover{
-    transform: translateX(.25rem);
-}
-*/
 .swiper-button-next::after,
 .swiper-button-prev::after{
     content: '';
