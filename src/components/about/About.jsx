@@ -32,21 +32,21 @@ const About = () => {
           <p>
             I'm a dedicated web developer with a specialization in creating outstanding digital experiences. Currently, I'm actively seeking new job opportunities. I bring both real-world project experience and a portfolio of personal projects, showcasing my expertise in both frontend and full-stack development.
           </p>
-          <div class="my-info">
-            <div class="single-info"><span>Name:</span>
+          <div className="my-info">
+            <div className="single-info"><span>Name:</span>
               <p>Nayandeep Shrestha</p>
             </div>
-            <div class="single-info"><span>From:</span>
+            <div className="single-info"><span>From:</span>
               <p>Kathmandu, Nepal</p>
             </div>
-            <div class="single-info"><span>Email:</span>
+            <div className="single-info"><span>Email:</span>
               <p><a href="mailto:shresnayan@gmail.com">shresnayan@gmail.com</a></p>
             </div>
-            <div class="single-info"><span>Phone:</span>
+            <div className="single-info"><span>Phone:</span>
               <p><a href="tel:+977 9861236946">+977 9861236946</a></p>
             </div>
           </div>
-          <ul class="follow-social">
+          <ul className="follow-social">
             <li>
               <h5>Follow me on </h5>
             </li>

@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import './form.css'
 import Modal from 'react-modal'
-import emailjs from 'emailjs-com';
+import emailjs from '@emailjs/browser';
 
 Modal.setAppElement('#root');
 

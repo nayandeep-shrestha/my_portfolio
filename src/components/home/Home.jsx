@@ -36,7 +36,7 @@ const Home = () => {
               style={{ fontSize: '1.75em', display: 'inline-block', fontFamily: 'Outline', color: 'white', letterSpacing: '2px' }}
               repeat={Infinity}
             />
-            <span class="cursor typing">&nbsp;</span>
+            <span className="cursor typing">&nbsp;</span>
           </h2>
           <p>
             I am a web developer with a passion for coding and a knack for transforming ideas into responsive, dynamic websites.
